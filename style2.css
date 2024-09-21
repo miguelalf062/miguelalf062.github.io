@@ -1,0 +1,44 @@
+#brainrotContainer {
+  margin: 0rem;
+
+  padding: 1rem;
+
+  width: 100%;
+}
+
+#brainrotHeader {
+  margin-bottom: 1rem;
+
+  color: white;
+  font-size: 32px;
+}
+
+#brainrotInputContainer {
+  margin-bottom: 1rem;
+
+  display: flex;
+  flex-direction: row;
+}
+
+#inputText {
+  margin: 0rem;
+
+  flex: 80%;
+
+  font-family: "Times New Roman";
+  font-size: 32px;
+}
+
+#submitButton {
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+  flex: 20%;
+}
+
+#outputText {
+  margin: 0rem;
+
+  color: white;
+  font-size: 32px;
+}

@@ -1,0 +1,34 @@
+#caloocan {
+  padding-left: 100px;
+}
+
+.aken {
+  text-decoration: none;
+  color: chocolate;
+  font-size: 10rem;
+  text-shadow: 1rem 1px 0 rgb(87, 78, 167);
+}
+
+#race {
+  font-size: 7rem;
+  color: transparent;
+  -webkit-text-stroke-color: rgb(231, 136, 136);
+  -webkit-text-stroke-width: 1px;
+  background-image: url("images/fire.png");
+  background-position: center;
+  background-clip: text;
+  font-weight: 100;
+  text-decoration: none;
+}
+
+#lista:target {
+  visibility: visible;
+}
+
+#lista {
+  list-style-type: none;
+  color: beige;
+  font-size: 2rem;
+  margin-top: 1rem;
+  visibility: hidden;
+}
