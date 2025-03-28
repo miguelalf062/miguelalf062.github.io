@@ -1,0 +1,220 @@
+
+
+.innerFilterContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 3rem;
+}
+
+.innerFilterContainer > * {
+    background-color: white;
+}
+
+.filterControlsTitle {
+    text-align: center;
+    background-color: transparent;
+    color: white;
+}
+.searchBarContainer {
+    border: 1px solid black;
+    width: 80%;
+    height: 30px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    transition: .1s ease-in-out;
+}
+
+.searchBarContainer:hover {
+    transform: scale(1.05);
+
+}
+
+.searchIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2.5%;
+}
+
+.filterSearchBar {
+    border: none;
+    margin-left: .5rem;
+    background-color: transparent;
+}
+
+.filterSearchBar:focus {
+    outline: none;
+}
+
+.candidateTypeContainer {
+    border: 1px solid black;
+    width: 80%;
+    border-radius: 15px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    user-select: none;
+    margin-top: 1rem;
+    transition: .1s ease-in-out;
+}
+
+.candidateTypeContainer:hover {
+    transform: scale(1.05);
+
+}
+
+.candidateTypeContainer > div {
+    margin: 1rem .1rem;
+    font-size: .75rem;
+}
+
+.candidateTypeContainer > *:nth-child(1) {
+    margin-left: 5%;
+}
+
+.candidateTypeContainer input[type='radio'] {
+    accent-color: black;
+    cursor: pointer;
+}
+
+.candidateTypeContainer::before {
+    content: "Candidate Type";
+    position: absolute;
+    margin-right: 0;
+    margin-left: auto;
+    left: 100%;
+    width: 130px;
+    font-size: 1rem;
+    border-radius: 10px;
+    background: black;
+    color: white;
+    outline: 1px solid black;
+    float: right; 
+    transform: translateY(110%) translateX(-90%);
+    padding: 0 .2rem;   
+}
+
+.platformsContainer {
+    border: 1px solid black;
+    width: 80%;
+    height: auto;
+    border-radius: 15px;
+    position: relative;
+    user-select: none;
+    margin-top: 2rem;
+    padding: 1.5rem 0;
+    transition: .1s ease-in-out;
+}
+
+.platformsContainer:hover {
+    transform: scale(1.05);
+}
+
+.platformsContainer span {
+    margin-left: .2rem;
+}
+.platformsContainer div {
+    margin-left: 1rem;
+    width: 60%;
+    height: auto;
+    transition: .1s ease-in-out;
+    padding-left: 1rem;
+}
+
+.platformsContainer div:hover {
+    outline: 1px solid black;
+    border-radius: 50px;
+    box-shadow:  5px 5px 7px #d3d3d3,
+             -5px -5px 7px #ededed;
+    transform: scale(1.05);
+}
+
+.platformsContainer input[type='checkbox'] {
+    accent-color: black;
+    cursor: pointer;
+}
+
+.platformsContainer::before {
+    content: "Platforms";
+    text-align: center;
+    position: absolute;
+    margin-right: 0;
+    margin-left: auto;
+    left: 100%;
+    width: 130px;
+    font-size: 1rem;
+    border-radius: 10px;
+    background: black;
+    color: white;
+    outline: 1px solid black;
+    float: right; 
+    transform: translateY(2250%) translateX(-90%);
+    padding: 0 .2rem;   
+}
+
+.miscContainer {
+    border: 1px solid black;
+    width: 80%;
+    height: auto;
+    border-radius: 15px;
+    position: relative;
+    user-select: none;
+    margin-top: 2rem;
+    padding: 1.5rem 0;
+    transition: .1s ease-in-out;
+    margin-bottom: 2rem;
+}
+
+.miscContainer div {
+    margin-left: 1rem;
+    width: 60%;
+    height: auto;
+    transition: .1s ease-in-out;
+    padding-left: 1rem;
+}
+
+.miscContainer div:hover {
+    outline: 1px solid black;
+    border-radius: 50px;
+    box-shadow:  5px 5px 7px #d3d3d3,
+             -5px -5px 7px #ededed;
+    transform: scale(1.05);
+}
+
+.miscContainer input[type='checkbox'] {
+    accent-color: black;
+    cursor: pointer;
+}
+
+.miscContainer span {
+    font-size: .9rem;
+}
+
+.miscContainer::before {
+    content: "Misc";
+    position: absolute;
+    margin-right: 0;
+    margin-left: auto;
+    left: 100%;
+    width: 130px;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 10px;
+    background: black;
+    color: white;
+    outline: 1px solid black;
+    float: right; 
+    transform: translateY(350%) translateX(-90%);
+    padding: 0 .2rem;   
+}
+
+.miscContainer:hover {
+    transform: scale(1.05);
+}
+
+
+.miscContainer span {
+    margin-left: .2rem;
+}

@@ -1,0 +1,226 @@
+.voteDeciderMainDiv {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.voteDeciderPromptContainer {
+    width: 60%;
+    height: 60%;
+    background-color: #1d2033;
+    z-index: 101;
+    border-radius: 25px;
+}
+
+.promptTitle { 
+    color: #4048a3;
+    width: 80%;
+    margin-left: 4rem;
+}
+
+
+.promptQuestionContainer1 {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.promptTextContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.promptQuestion1 {
+     color: white;
+     font-size: 2rem;
+     width: 80%;
+     margin-left: 4rem;
+}
+.promptDescription1 {
+    color: #6b6e85;
+    font-size: 1.5rem;
+    width: 80%;
+    margin-left: 4rem;
+}
+.promptQuestion1button {
+    background: rgb(222,80,80);
+    background: linear-gradient(270deg, rgba(222,80,80,1) 16%, rgba(30,51,235,1) 77%);
+    color: white;
+    border-radius: 25px;
+    border: none;
+    height: 30px;
+    width: 25%;
+    font-family: roboto;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: .1s ease-in-out;
+    margin-top: 1rem;
+    margin-left: 4rem;
+}
+
+.promptQuestion1button:hover {
+    box-shadow:
+    0 0 12.5px 3.75px #fff,  /* inner white */
+    0 0 0px 0px rgb(255, 255, 255), /* middle magenta */
+    0 0 0px 0px rgb(233, 230, 67); /* outer cyan */
+}
+
+
+
+
+.platformSelectorContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.9);
+}
+
+.platformSelectorContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 2rem;
+    grid-column-gap: -20rem;
+    overflow: auto;
+    scrollbar-gutter: stable;
+    transition: .1s ease-in-out;
+    padding-top: .5rem;
+    padding-left: 1rem;
+}
+.platformSelectorContainer::-webkit-scrollbar {
+    width: 1rem;
+    position: relative;
+    border-radius: 25px;
+  }
+
+.platformSelectorContainer::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 25px;
+
+}
+
+.platformSelectorContainer::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+    background-color: #b0c6f7;
+}
+
+   
+.platformCard {
+    height: 250px;
+    width: 250px;
+    border: 1px solid white;
+    border-radius: 25px;
+    background-color: white;
+    transition: .1s ease-in-out;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.platformCard:hover {
+    transform: scale(1.05);
+}
+
+
+.platformCardImage {
+    height: 45%;
+    width: 45%;
+}
+
+.platformCardTitle {
+    font-size: 1.5rem;
+}
+
+.platformItemSelected {
+    outline: 5px solid red;
+}
+
+.platformItemSelected::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background: url("../data/checked.png");
+    background-size: cover;
+    position: absolute;
+    transform: translate(200%, 200%);
+}
+
+
+.platformSelectorContainer2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.promptQuestion2Button {
+    width: 250px;
+    height: 100px;
+    background-color: white;
+    margin: 3rem;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .1s ease-in-out;
+}
+
+.promptQuestion2Button:hover {
+    transform: scale(1.1);
+}
+
+.promptQuestion2Button > h1 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.promptQuestion2Button:nth-child(1):hover {
+    background: url("../data/desert.jpg") 0 -50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.promptQuestion2Button:nth-child(2):hover {
+    background: url("../data/urban.webp") 0 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    -webkit-text-stroke: .5px;
+    -webkit-text-fill-color: gold;
+}
+
+
+
+.promptQuestion3Button {
+    width: 250px;
+    height: 100px;
+    background-color: white;
+    margin: 3rem;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .1s ease-in-out;
+}
+
+.promptQuestion3Button:hover {
+    transform: scale(1.1);
+}
+
+.promptQuestion3Button > h1 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.promptQuestion3Button:nth-child(2) > h1 {
+    font-size: 1.25rem;
+}

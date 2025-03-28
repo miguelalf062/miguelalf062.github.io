@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/app.css">
+    <link rel="stylesheet" href="styles/modal.css">
+    <link rel="stylesheet" href="styles/filterControls.css">
+    <link rel="stylesheet" href="styles/homepage.css">
+    <link rel="stylesheet" href="styles/voteDecider.css">
+    <!-- JSON DATA -->
+    <script src="data/marcus/marcus.js" defer></script>
+    <script src="data/von/von.js" defer></script>
+    <script src="data/cj/cj.js" defer></script>
+
+    <!-- JS -->
+    <script src="scripts/cell.js" defer></script>
+    <script src="scripts/voteTime.js" defer></script>
+    <script src="scripts/homepage.js" defer></script>
+    <script src="scripts/voteDecider.js" defer></script>
+    <!-- icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+</head>
+<body>
+    <div class="navbarContainer">
+        <div class="logoContainer">
+            <img draggable="false" src="data/flag.webp" alt="" srcset="">
+            <h1>Group 1 - RIZAL BSECE 3A</h1>
+        </div>
+        <div id="homepageButton" class="homeButtonContainer">
+            Home Page
+        </div>
+    </div>
+
+    <div class="appContainer" id="app">
+        <div class="innerAppContainer">
+            <div class="filterContainer">
+                <div class="innerFilterContainer" id="innerFilterContainer">
+                    <h1 class="filterControlsTitle">Filter</h1>
+                    <!-- Search Bar -->
+                    <div class="searchBarContainer">
+                        <span class="material-symbols-outlined searchIcon">search</span>
+                        <input class="filterSearchBar" type="text" name="" id="filterSearchBar">
+                    </div>
+                    <!-- Candidate Type -->                    
+                    <div class="candidateTypeContainer">
+                        <div>
+                            <input option="Senator" updateCandidates = true type="radio" name="candidateType" id="candidateTypeSenator">
+                            <span>Senator</span>
+                        </div>
+                        <div>
+                            <input option="Party List" updateCandidates = true type="radio" name="candidateType" id="candidateTypePartyList">
+                            <span>Party List</span>
+                        </div>
+                        <div>
+                            <input option="both" updateCandidates = true type="radio" name="candidateType" id="candidateTypeBoth">
+                            <span>Both</span>
+                        </div>
+                    </div>
+                    <!-- Platforms -->
+                    <div class="platformsContainer">
+                        <div><input option="Governance" updateCandidates = true type="checkbox" name="" id="governanceCheckBox"><span>Governance</span></div>
+                        <div><input option="Agriculture" updateCandidates = true type="checkbox" name="" id="agricultureCheckBox"><span>Agriculture</span></div>
+                        <div><input option="Education" updateCandidates = true type="checkbox" name="" id="educationCheckBox"><span>Education</span></div>
+                        <div><input option="Energy" updateCandidates = true type="checkbox" name="" id="energyCheckBox"><span>Energy</span></div>
+                        <div><input option="Health" updateCandidates = true type="checkbox" name="" id="healthCheckBox"><span>Health</span></div>
+                        <div><input option="Economy" updateCandidates = true type="checkbox" name="" id="economyCheckBox"><span>Economy</span></div>
+                        <div><input option="Politics" updateCandidates = true type="checkbox" name="" id="politicsCheckBox"><span>Politics</span></div>
+                        <div><input option="Environment" updateCandidates = true type="checkbox" name="" id="environmentCheckBox"><span>Environment</span></div>
+                        <div><input option="Military" updateCandidates = true type="checkbox" name="" id="militaryCheckBox"><span>Military</span></div>
+                        <div><input option="Housing" updateCandidates = true type="checkbox" name="" id="housingCheckBox"><span>Housing</span></div>
+                        <div><input option="Social Welfare" updateCandidates = true type="checkbox" name="" id="socialWelfareCheckBox"><span style="font-size: .75rem;">Social Welfare</span></div>
+                        <div><input option="Geopolitics" updateCandidates = true type="checkbox" name="" id="geoPoliticsCheckBox"><span>Geopolitics</span></div>
+                        <div><input option="Women's Rights" updateCandidates = true type="checkbox" name="" id="women'sRightsCheckBox"><span style="font-size: .75rem;">Women's Rights</span></div>
+                        <div><input option="Illegal Drugs" updateCandidates = true type="checkbox" name="" id="illegalDrugsCheckBox"><span>Illegal Drugs</span></div>
+                        <div><input option="Transportation" updateCandidates = true type="checkbox" name="" id="transportationCheckBox"><span style="font-size: .75rem;">Transportation</span></div>
+                        <div><input option="Infrastructure" updateCandidates = true type="checkbox" name="" id="infrastructureCheckBox"><span>Infrastructure</span></div>
+                        <div><input option="Workforce" updateCandidates = true type="checkbox" name="" id="workForceCheckBox"><span>Workforce</span></div>
+                        <div><input option="PWD" updateCandidates = true type="checkbox" name="" id="pwdCheckBox"><span>PWD</span></div>
+                        <div><input option="Technology" updateCandidates = true type="checkbox" name="" id="technologyCheckBox"><span>Technology</span></div>
+                        <div><input option="Animal Welfare" updateCandidates = true type="checkbox" name="" id="animalWelfareCheckBox"><span style="font-size: .75rem;">Animal Welfare</span></div>
+                        <div><input option="Disaster Relief" updateCandidates = true type="checkbox" name="" id="disasterReliefCheckBox"><span>Disaster Relief</span></div>
+                        <div><input option="Religion" updateCandidates = true type="checkbox" name="" id="religionCheckBox"><span>Religion</span></div>
+
+                    </div>
+                    <!-- Misc -->
+                     <div class="miscContainer">
+                        <div><input option="hasHistory" updateCandidates = true type="checkbox" name="" id="hasHistoryCheckBox"><span>Has history</span></div>
+                        <div><input option="hasProjects" updateCandidates = true type="checkbox" name="" id="hasProjectsCheckBox"><span>Has Projects</span></div>
+                        <div><input option="isIndependent" updateCandidates = true type="checkbox" name="" id="isIndependentCheckBox"><span>Is Independent</span></div>
+
+                     </div>
+                </div>
+            </div>
+            <div class="dataContainer">
+                <div id="innerDataContainer" class="innerDataContainer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="homepageContainer" id="homepage">
+        <h1 class="votingTimeTitle">Voting Starts in</h1>
+        <div class="votingTime">
+            <div class="votingTimeDay">
+                <h1>Day</h1>
+                <h2 id="votingTimeDay">12</h2>
+            </div>
+            <div class="votingTimeHour">
+                <h1>Hour</h1>
+                <h2 id="votingTimeHour">42</h2>
+            </div>
+            <div class="votingTimeMinute">
+                <h1>Minute</h1>
+                <h2 id="votingTimeMinute">13</h2>
+            </div>
+            <div class="votingTimeSecond">
+                <h1>Second</h1>
+                <h2 id="votingTimeSecond">52</h2>
+            </div>
+        </div>
+        <div class="homepageButtonContainer">
+            <button type="button" id="helpMeDecideButton">Help me Decide</button>
+            <button type="button" id="candidatesButton">Candidates</button>
+    
+        </div>
+    </div>
+
+    <div class="footerContainer">
+    </div>
+</body>
+</html>

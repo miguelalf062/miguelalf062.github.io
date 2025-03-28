@@ -1,0 +1,108 @@
+.homepageContainer {
+    outline: 1px solid black;
+    width: 100vw;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-image: url("../data/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    /*CONTROLS FLEX-ON NONE-OFF*/
+    display: flex;
+}
+
+.votingTimeTitle {
+    font-size: 5rem;
+    font-family: Playfair Display;
+    color: black;
+    user-select: none;
+}
+
+.votingTime {
+    font-size: 5rem;
+    font-family: Playfair Display;
+    display: flex;
+    user-select: none;
+}
+
+.votingTime > div {
+    outline: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 300px;
+    margin: .5rem;
+    border-radius: 10px;
+    height: 275px;
+    background-color: white;
+}
+
+.votingTime > div > h1 {
+    font-size: 4rem;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.votingTime > div > h2 {
+    font-size: 3.5rem;
+    transform: translateY(-50%) scale(1.75);
+}
+
+.homepageButtonContainer{
+    width: 1000px;
+    height: 200px;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homepageButtonContainer > button {
+    width: 400px;
+    height: 75px;
+    background-color: white;
+    outline: 1px solid black;
+    border: none;
+    border-radius: 10px;
+    margin: 3rem;
+    cursor: pointer;
+    font-family: poppins;
+    font-size: 2rem;
+    transition: .1s ease-in-out;
+    user-select: none;
+}
+
+.homepageButtonContainer > button:hover {
+    transform: scale(1.1);
+    background-image: url("../data/flag.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    box-shadow:
+    0 0 30px 15px #fff,  /* inner white */
+    0 0 50px 30px rgb(255, 255, 255), /* middle magenta */
+    0 0 70px 45px rgb(233, 230, 67); /* outer cyan */
+}
+
+.homepageButtonContainer > button:nth-child(1):hover {
+    color: blue;
+    -webkit-text-stroke: 1px;
+    -webkit-text-fill-color: white;
+
+}
+
+.homepageButtonContainer > button:nth-child(2):hover {
+    color: red;
+    -webkit-text-stroke: 1px;
+    -webkit-text-fill-color: white;
+
+}

@@ -1,0 +1,256 @@
+.darkCast {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    cursor: pointer;
+    z-index: 100;
+}
+
+.modal {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+
+.modalInfoContainer {
+    width: 75vw;
+    height: 80vh;
+    background-color: white;
+    position: absolute;
+    z-index: 101;
+    animation: topFade .1s ease-out forwards ;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+@keyframes topFade {
+    from {
+        top: -2000px;
+        transform: scale(.05);
+    } to {
+        top: 10vh;
+        transform: scale(1);
+    }
+}
+
+.modalInfoContainer > * {
+    z-index: 102;
+    position: absolute;
+}
+
+.modalInfoName {
+    position: absolute;
+    color: white;
+    display: none;
+    left: 25%;
+    top: 6.5%;
+    font-size: 3rem;
+}
+
+.modalInfoParty {
+    position: absolute;
+    color: rgb(255, 122, 122);
+    left: 25%;
+    top: 2.5%;
+    font-size: 2rem;
+}
+
+ 
+.modalInfoTextAnimation {
+    display: block;
+    animation: textFade .3s ease-in forwards;
+    
+}
+@keyframes textFade {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.gradientBackground {
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    background: rgb(136,128,255);
+    background: linear-gradient(212deg, rgba(136,128,255,1) 0%, rgba(85,85,255,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.profilePic {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 30px;
+    left: 30px;
+    border-radius: 40px;
+}
+
+.modalBallotNumberContainer {
+    width: 200px;
+    height: 50px;
+    border: 1px solid black;
+    position: relative;
+    top: 12%;
+    left: 82.5%;
+    
+    background-color: white;
+    border-radius: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.candidateTypeTextSenator {
+    position: absolute;
+    color: black;
+    left: 25%;
+    top: 19%;
+    font-size: 1.2rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1px 10px;
+    background: rgb(244,230,230);
+    background: radial-gradient(circle, rgba(244,230,230,1) 0%, rgba(201,201,201,1) 100%);
+    user-select: none;
+}
+
+.candidateTypeTextPartyList {
+    position: absolute;
+    color: black;
+    left: 25%;
+    top: 19%;
+    font-size: 1.2rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1px 10px;
+    background: rgb(244,230,230);
+    background: radial-gradient(circle, rgba(244,230,230,1) 0%, rgba(98,184,99,1) 100%);
+    user-select: none;
+}
+
+.candidacyHistoryText {
+    position: absolute;
+    color: black;
+    left: 25%;
+    top: 25%;
+    font-size: 1.5rem;
+    width: 50%;
+    height: 15%;
+    overflow: auto;
+}
+
+.projectsText {
+    color: black;
+
+    font-size: 2.5rem;
+}
+
+.projectsContainer {
+    color: black;
+    width: 80%;
+    height: 50%;
+    overflow: auto;
+}
+.project {
+    font-size: 1rem;
+    font-family: roboto;
+}
+
+.projectWrapper {
+    position: absolute;
+    color: black;
+    left: 25%;
+    top: 45%;
+    width: 40%;
+    height: 40%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+
+}
+
+.ProfessionTitle {
+    position: absolute;
+    color: black;
+    left: 6%;
+    top: 37.5%;
+    font-size: 1.5rem;
+}
+
+.Profession {
+    position: absolute;
+    color: black;
+    left: 6%;
+    top: 42%;
+    font-size: 1rem;
+    width: 10%;
+}
+
+.EducationTitle {
+    position: absolute;
+    color: black;
+    left: 6%;
+    top: 55%;
+    font-size: 1.5rem;
+}
+
+.Education {
+    position: absolute;
+    color: black;
+    left: 6%;
+    top: 60%;
+    font-size: 1rem;
+    width: 12%;
+}
+
+.modalPlatformsContainer {
+    width: 275px;
+    height: 500px;
+    outline: 1px solid black;
+    left: 77.5%;
+    top: 25%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modalPlatformsContainer::before {
+    content: "PLATFORMS";
+    position: absolute;
+    width: 100%;
+    background-color: black;
+    color: white;
+    top: 0;
+    height: 10%;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.modalPlatformItem{
+    font-size: 1rem;
+    border-radius: 25px;
+    outline: 1px solid black;
+    width: 60%;
+    height: 7.5%;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
