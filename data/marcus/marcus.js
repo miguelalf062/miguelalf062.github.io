@@ -244,7 +244,7 @@ const marcusJSONFile = [
     },
 
     {      
-        "name": "ALlen Capuyan",
+        "name": "Allen Capuyan",
         "ballotNumber": 15,
         "platforms": ["Military", "Social Welfare", "Governance"],
         "projects": [
