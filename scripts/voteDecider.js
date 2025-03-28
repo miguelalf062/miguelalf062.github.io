@@ -203,7 +203,7 @@ function voteDecidePrompt() {
         if (isIndependent) {
             document.getElementById("isIndependentCheckBox").checked = true;
         }
-
+        updateCandidatesList();
         mainDiv.remove()
 
     })
@@ -233,6 +233,7 @@ function voteDecidePrompt() {
         if (isIndependent) {
             document.getElementById("isIndependentCheckBox").checked = true;
         }
+        updateCandidatesList();
         mainDiv.remove()
 
     })
