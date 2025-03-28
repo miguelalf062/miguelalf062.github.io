@@ -705,7 +705,7 @@ const vonJSONFile = [
     ],
     "isPartylist": true,
     "firstNominee": "Jose Antonio Goitia/Astravel Naik",
-    "pictureFileName": "abp.jpg"
+    "pictureFileName": "ABP.jpg"
   },
   {
     "name": "CWS Partylist",
